@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Search, X, Heart, ChevronDown, Filter, CreditCard, Wallet } from 'lucide-react';
 import './App.css';
-import { ChevronDown, CreditCard, Wallet } from 'the-icons-package';
-
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('electronics');
@@ -11,7 +9,7 @@ export default function App() {
   const [cartItems, setCartItems] = useState([]);
   const [wishlistItems, setWishlistItems] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
-  const [priceFilter, setPriceFilter] = useState(50000);
+  const [priceFilter, setPriceFilter] = useState(100000);
   const [paymentOpen, setPaymentOpen] = useState(false);
   const [sizeModal, setSizeModal] = useState(null);
   const [selectedSize, setSelectedSize] = useState('M');
@@ -144,13 +142,14 @@ export default function App() {
     setCartOpen(false);
     setPaymentOpen(false);
   };
+
   const getHeroBackground = () => {
     if (activeCategory === 'electronics') {
-      return ' url("bg.jpg")'; 
+      return 'url("bg.jpg")'; 
     } else if (activeCategory === 'fashion') {
-      return ' url("bg.jpg")'; 
+      return 'url("bg.jpg")'; 
     } else {
-      return ' url("bg.jpg")'; 
+      return 'url("bg.jpg")'; 
     }
   };
 
