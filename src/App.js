@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { ShoppingCart, Search, X, Heart, ChevronDown, Filter, CreditCard, Wallet } from 'lucide-react';
 import './App.css';
+import { ChevronDown, CreditCard, Wallet } from "lucide-react";
+
 
 export default function App() {
   const [activeCategory, setActiveCategory] = useState('electronics');
