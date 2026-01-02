@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ShoppingCart, Search, X, Heart, ChevronDown, Filter, CreditCard, Wallet } from 'lucide-react';
+import { ShoppingCart, Search, X, Heart, Filter } from 'lucide-react';
 import './App.css';
 
 export default function App() {
